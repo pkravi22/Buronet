@@ -60,15 +60,15 @@ const SideBar = () => {
               </Link>
             </li>
             <li>
-              <a
-                href="/jobs"
+              <Link
+                to="/jobs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center w-full px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors !rounded-button whitespace-nowrap cursor-pointer"
               >
                 <i className="fas fa-briefcase mr-3 text-lg text-gray-500"></i>
                 Jobs
-              </a>
+              </Link>
             </li>
             <li>
               <Link
