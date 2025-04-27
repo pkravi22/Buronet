@@ -62,11 +62,17 @@ const SideBar = () => {
             <li>
               <Link
                 to="/jobs"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center w-full px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors !rounded-button whitespace-nowrap cursor-pointer"
+                className={`flex items-center w-full px-4 py-3 text-sm font-medium ${
+                  currentPath === "/jobs"
+                    ? "text-blue-600 bg-blue-50"
+                    : "text-gray-700 hover:bg-gray-50"
+                } transition-colors !rounded-button whitespace-nowrap cursor-pointer`}
               >
-                <i className="fas fa-briefcase mr-3 text-lg text-gray-500"></i>
+                <i
+                  className={`fas fa-briefcase mr-3 text-lg ${
+                    currentPath === "/jobs" ? "text-blue-600" : "text-gray-500"
+                  }`}
+                ></i>
                 Jobs
               </Link>
             </li>

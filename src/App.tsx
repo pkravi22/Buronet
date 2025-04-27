@@ -13,7 +13,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Homecompo />} /> {/* Default child at "/" */}
-          <Route path="jobs" element={<Jobs />} />
+          <Route path="/jobs" element={<Jobs />} />
           <Route path="/messaging" element={<Messaging />} />
           <Route path="/bytes" element={<Bytes />} />
         </Route>
