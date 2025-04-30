@@ -6,6 +6,7 @@ import Homecompo from "./component/Homecompo";
 import Jobs from "./component/jobs";
 import Messaging from "./component/Messaging";
 import Bytes from "./component/Bytes";
+import Circle from "./component/Circle";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/jobs" element={<Jobs />} />
           <Route path="/messaging" element={<Messaging />} />
           <Route path="/bytes" element={<Bytes />} />
+          <Route path="/circle" element={<Circle />} />
         </Route>
         {/* Catch all unmatched routes */}
         <Route path="*" element={<Navigate to="/" replace />} />

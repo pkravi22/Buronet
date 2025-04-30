@@ -7,7 +7,7 @@ const SideBar = () => {
 
   return (
     <div>
-      <div className="hidden md:flex flex-col w-60 bg-green-200 h-screen fixed left-0 top-0 border-r border-gray-200 shadow-sm z-10">
+      <div className="hidden md:flex flex-col w-60  h-screen fixed left-0 top-0 border-r border-gray-200 shadow-sm z-10">
         <div className="px-4 py-5 flex items-center justify-center border-b border-gray-100">
           <div className="flex items-center space-x-2">
             <img
