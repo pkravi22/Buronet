@@ -7,6 +7,7 @@ import Jobs from "./component/jobs";
 import Messaging from "./component/Messaging";
 import Bytes from "./component/Bytes";
 import Circle from "./component/Circle";
+import Profile from "./component/Profile";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/messaging" element={<Messaging />} />
           <Route path="/bytes" element={<Bytes />} />
           <Route path="/circle" element={<Circle />} />
+          <Route path="/my-profile" element={<Profile />} />
         </Route>
         {/* Catch all unmatched routes */}
         <Route path="*" element={<Navigate to="/" replace />} />

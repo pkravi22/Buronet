@@ -115,6 +115,28 @@ const SideBar = () => {
                 </span>
               </Link>
             </li>
+            <li>
+              <Link
+                to="/my-profile"
+                className={`flex items-center w-full px-4 py-3 text-sm font-medium ${
+                  currentPath === "/messaging"
+                    ? "text-blue-600 bg-blue-50"
+                    : "text-gray-700 hover:bg-gray-50"
+                } transition-colors !rounded-button whitespace-nowrap cursor-pointer`}
+              >
+                <i
+                  className={`fas fa-user mr-3 text-lg ${
+                    currentPath === "/messaging"
+                      ? "text-blue-600"
+                      : "text-gray-500"
+                  }`}
+                ></i>
+                Profile
+                <span className="ml-auto bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
+                  3
+                </span>
+              </Link>
+            </li>
           </ul>
         </nav>
 
