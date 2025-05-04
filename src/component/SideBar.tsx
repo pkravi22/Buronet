@@ -200,6 +200,17 @@ const SideBar = () => {
             3
           </span>
         </Link>
+        <Link
+          to="/my-profile"
+          className={`p-2 rounded-full relative ${
+            currentPath === "/messaging" ? "text-blue-600" : "text-gray-500"
+          }`}
+        >
+          <i className="fas fa-user text-xl"></i>
+          <span className="absolute top-0 right-0 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
+            3
+          </span>
+        </Link>
       </div>
     </div>
   );
